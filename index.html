@@ -1,0 +1,55 @@
+
+<html lang="en">
+    <head>
+        <title>Typing Test</title>
+     
+        <!-- link the CSS file here -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="heading">
+          Test di velocità di scrittura
+        </div>
+        <div class="header">
+          <div class="wpm">
+            <div class="header_text">Parole per minuto</div>
+            <div class="curr_wpm">100</div>
+          </div>
+          <div class="cpm">
+            <div class="header_text">Caratteri per minuto</div>
+            <div class="curr_cpm">100</div>
+          </div>
+          <div class="errors">
+            <div class="header_text">Errori</div>
+            <div class="curr_errors">0</div>
+          </div>
+          <div class="timer">
+            <div class="header_text">Tempo</div>
+            <div class="curr_time">60s</div>
+          </div>
+          <div class="accuracy">
+            <div class="header_text">% precisione</div>
+            <div class="curr_accuracy">100</div>
+          </div>
+        </div>
+     
+        <div class="quote">
+          Clicca qui sotto per iniziare il test.
+        </div>
+        <textarea class="input_area"
+          placeholder="Inizia scrivendo qui.."
+          oninput="processCurrentText()"
+          onfocus="startGame()">
+        </textarea>
+        <button class="restart_btn"
+          onclick="resetValues()">
+          Restart
+        </button>
+      </div>
+     
+      <!-- link the JavaScript file here -->
+      <script src="game.js">
+      </script>
+    </body>
+    </html>
